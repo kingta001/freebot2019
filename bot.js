@@ -48,6 +48,11 @@ msg.reply('https://discordapp.com/oauth2/authorize?client_id=603008079616802817&
 
 
 
+client.on('message',msg=>{ 
+  if(msg.content==='$free nitro') 
+msg.reply('** https://discord.gift/pSrKkknaRTQP3wj8   **');
+})
+
 
 
 client.on('message',msg=>{ 
