@@ -1,0 +1,94 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+
+
+
+ client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setGame(`$help | $inv | Free Nitro`,'https://www.twitch.tv/zya2d_')
+    client.user.setStatus('ldle');
+});
+
+
+
+client.on('message', msg => {
+
+  if (msg.content.startsWith("$help")) {
+    msg.channel.send(`**
+ $free nitro | Nitro code answers you
+ 
+ $inv | add bot 
+ 
+ 
+ 
+	**`)
+
+  }
+})
+
+
+
+//................................................................
+
+
+
+
+//................................................................
+
+
+
+
+
+//................................................................
+
+client.on('message',msg=>{ 
+  if(msg.content==='$inv') 
+msg.reply('https://discordapp.com/oauth2/authorize?client_id=603008079616802817&permissions=2080374975&scope=bot');
+})
+
+
+
+client.on('message',msg=>{ 
+  if(msg.content==='$free nitro') 
+msg.reply('** https://discord.gift/pSrKkknaRTQP3wj8  **');
+})
+
+var prefix = "$"
+client.on('message',async message => {
+  if (message.content.startsWith(prefix+"bot")) {
+  message.channel.send({
+      embed: new Discord.RichEmbed()
+          .setAuthor(client.user.username,client.user.avatarURL)
+          .setThumbnail(client.user.avatarURL)
+          .setColor('RANDOM')
+          .setTitle('``INFO '+client.user.username+'``')
+          .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
+          .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
+          .addField('``servers``', [client.guilds.size], true)
+          .addField('``channels``' , `[ ${client.channels.size} ]` , true)
+          .addField('``Users``' ,`[ ${client.users.size} ]` , true)
+          .addField('``My Name``' , `[ ${client.user.tag} ]` , true)
+          .addField('``My ID``' , `[ ${client.user.id} ]` , true)
+          .addField('``My Prefix``' , `[ ${prefix} ]` , true)
+          .addField('``My Language``' , `[ Java Script ]` , true)
+          .setFooter('By: Rita#6707 ')
+  })
+}
+});
+
+
+var prefix = "$"
+client.on('message', async message => {
+    if(message.content.startsWith("allbc")) {
+      if(message.author.id !== '600839628739706910') return message.channel.send('الامر لصاحب البوت');
+      var args = message.content.split(" ").slice(1).join(" ");
+      if(!args) return message.channel.send('يجب عليك كتابه رساله لعمل برودكاست')
+      client.users.forEach(sh => {
+         op = {}
+        sh.send(args).catch(e => op); 
+      });
+    }
+    });
+
+
+client.login(process.env.BOT_TOKEN);
