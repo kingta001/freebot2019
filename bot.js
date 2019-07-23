@@ -43,7 +43,7 @@ client.on('message', msg => {
 
 client.on('message',msg=>{ 
   if(msg.content==='$inv') 
-msg.reply('https://discordapp.com/oauth2/authorize?client_id=603008079616802817&permissions=2080374975&scope=bot');
+msg.reply('https://discordapp.com/oauth2/authorize?client_id=603201539691249694&permissions=2080374975&scope=bot');
 })
 
 
