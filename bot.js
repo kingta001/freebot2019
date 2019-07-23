@@ -49,7 +49,7 @@ msg.reply('https://discordapp.com/oauth2/authorize?client_id=603201539691249694&
 
 
 client.on('message',msg=>{ 
-  if(msg.content==='$free nitro') 
+  if(msg.content==='$free nitro.') 
 msg.reply('** https://discord.gift/pSrKkknaRTQP3wj8   **');
 })
 
@@ -57,7 +57,7 @@ msg.reply('** https://discord.gift/pSrKkknaRTQP3wj8   **');
 
 client.on('message',msg=>{ 
   if(msg.content==='$free nitro') 
-msg.reply('** https://discord.gift/rQUPxS7aAZmfa3C8  **');
+msg.reply('** https://discord.gift/TfAUrTPBK3hJRy2d  **');
 })
 
 
