@@ -89,7 +89,7 @@ client.on('message',async message => {
 
 var prefix = "$"
 client.on('message', async message => {
-    if(message.content.startsWith("allbc")) {
+    if(message.content.startsWith("$allbc")) {
       if(message.author.id !== '600839628739706910') return message.channel.send('الامر لصاحب البوت');
       var args = message.content.split(" ").slice(1).join(" ");
       if(!args) return message.channel.send('يجب عليك كتابه رساله لعمل برودكاست')
