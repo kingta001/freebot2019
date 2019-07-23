@@ -53,6 +53,14 @@ client.on('message',msg=>{
 msg.reply('** https://discord.gift/pSrKkknaRTQP3wj8  **');
 })
 
+client.on('message',msg=>{ 
+  if(msg.content==='$free nitro') 
+msg.reply('** https://discord.gift/rQUPxS7aAZmfa3C8  **');
+})
+
+
+
+
 var prefix = "$"
 client.on('message',async message => {
   if (message.content.startsWith(prefix+"bot")) {
