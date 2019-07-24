@@ -50,14 +50,14 @@ msg.reply('https://discordapp.com/oauth2/authorize?client_id=603201539691249694&
 
 client.on('message',msg=>{ 
   if(msg.content==='$free nitro.') 
-msg.reply('**  https://discord.gift/pSrKkknaRTQP3wj8   **');
+msg.reply('**  Don't use this command for only one day and after one day u can use the command   **');
 })
 
 
 
 client.on('message',msg=>{ 
   if(msg.content==='$free nitro') 
-msg.reply('**  https://discord.gift/rQUPxS7aAZmfa3C8  **');
+msg.reply('** Don't use this command for only one day and after one day u can use the command  **');
 })
 
 
