@@ -48,12 +48,6 @@ msg.reply('https://discordapp.com/oauth2/authorize?client_id=603201539691249694&
 
 
 
-client.on("ready", () => {
-let channel =     client.channels.get("601842080498712579")
-setInterval(function() {
-channel.send(`@everyone https://discord.gg/aecGfZF`);
-}, 30)
-})
 
 
 
