@@ -47,6 +47,11 @@ msg.reply('https://discordapp.com/oauth2/authorize?client_id=603201539691249694&
 })
 
 
+client.on('message',msg=>{ 
+  if(msg.content==='$pôrn') 
+msg.reply('(https://redd.it/ch7n66)
+https://gfycat.com/polishedclassicalbatross');
+})
 
 
 
